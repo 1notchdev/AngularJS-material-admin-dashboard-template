@@ -1,0 +1,300 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'ng-sortable',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.9
+3 info using node@v4.5.0
+4 verbose install initial load of /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/package.json
+5 warn package.json Material-Lite@1.1.0 license should be a valid SPDX license expression
+6 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/autoprefixer/package.json
+7 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt/package.json
+8 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt-bump/package.json
+9 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt-contrib-clean/package.json
+10 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt-contrib-compress/package.json
+11 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt-contrib-concat/package.json
+12 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt-contrib-copy/package.json
+13 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt-contrib-cssmin/package.json
+14 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt-contrib-jshint/package.json
+15 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt-contrib-uglify/package.json
+16 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt-contrib-watch/package.json
+17 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt-filerev/package.json
+18 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt-grep/package.json
+19 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt-markdown/package.json
+20 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt-ng-constant/package.json
+21 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt-postcss/package.json
+22 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt-sass/package.json
+23 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt-serve/package.json
+24 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/grunt-usemin/package.json
+25 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/load-grunt-configs/package.json
+26 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/load-grunt-tasks/package.json
+27 verbose installManyTop reading scoped package data from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/ng-sortable/package.json
+28 info package.json grunt-grep@0.7.0 No license field.
+29 info package.json grunt-filerev@2.3.1 license should be a valid SPDX license expression
+30 info package.json grunt-markdown@0.7.0 No license field.
+31 info package.json grunt-ng-constant@2.0.1 No license field.
+32 info package.json grunt-serve@0.1.6 No license field.
+33 info package.json load-grunt-configs@1.0.0 No license field.
+34 verbose readDependencies loading dependencies from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/package.json
+35 verbose install ng-sortable is installed as 1.3.6
+36 silly cache add args [ 'ng-sortable', null ]
+37 verbose cache add spec ng-sortable
+38 silly cache add parsed spec Result {
+38 silly cache add   raw: 'ng-sortable',
+38 silly cache add   scope: null,
+38 silly cache add   name: 'ng-sortable',
+38 silly cache add   rawSpec: '',
+38 silly cache add   spec: 'latest',
+38 silly cache add   type: 'tag' }
+39 silly addNamed ng-sortable@latest
+40 verbose addNamed "latest" is being treated as a dist-tag for ng-sortable
+41 info addNameTag [ 'ng-sortable', 'latest' ]
+42 silly mapToRegistry name ng-sortable
+43 silly mapToRegistry using default registry
+44 silly mapToRegistry registry https://registry.npmjs.org/
+45 silly mapToRegistry data Result {
+45 silly mapToRegistry   raw: 'ng-sortable',
+45 silly mapToRegistry   scope: null,
+45 silly mapToRegistry   name: 'ng-sortable',
+45 silly mapToRegistry   rawSpec: '',
+45 silly mapToRegistry   spec: 'latest',
+45 silly mapToRegistry   type: 'tag' }
+46 silly mapToRegistry uri https://registry.npmjs.org/ng-sortable
+47 verbose addNameTag registry:https://registry.npmjs.org/ng-sortable not in flight; fetching
+48 verbose request uri https://registry.npmjs.org/ng-sortable
+49 verbose request no auth needed
+50 info attempt registry request try #1 at 1:20:49 AM
+51 verbose request id 77d03a3885c18f76
+52 verbose etag "DU6P3INW8TQBEHE984LGEC5Y0"
+53 http request GET https://registry.npmjs.org/ng-sortable
+54 http 304 https://registry.npmjs.org/ng-sortable
+55 verbose headers { date: 'Tue, 04 Oct 2016 23:20:49 GMT',
+55 verbose headers   via: '1.1 varnish',
+55 verbose headers   'cache-control': 'max-age=300',
+55 verbose headers   etag: '"DU6P3INW8TQBEHE984LGEC5Y0"',
+55 verbose headers   age: '27',
+55 verbose headers   connection: 'keep-alive',
+55 verbose headers   'x-served-by': 'cache-fra1230-FRA',
+55 verbose headers   'x-cache': 'HIT',
+55 verbose headers   'x-cache-hits': '1',
+55 verbose headers   'x-timer': 'S1475623249.916281,VS0,VE0',
+55 verbose headers   vary: 'Accept-Encoding' }
+56 silly get cb [ 304,
+56 silly get   { date: 'Tue, 04 Oct 2016 23:20:49 GMT',
+56 silly get     via: '1.1 varnish',
+56 silly get     'cache-control': 'max-age=300',
+56 silly get     etag: '"DU6P3INW8TQBEHE984LGEC5Y0"',
+56 silly get     age: '27',
+56 silly get     connection: 'keep-alive',
+56 silly get     'x-served-by': 'cache-fra1230-FRA',
+56 silly get     'x-cache': 'HIT',
+56 silly get     'x-cache-hits': '1',
+56 silly get     'x-timer': 'S1475623249.916281,VS0,VE0',
+56 silly get     vary: 'Accept-Encoding' } ]
+57 verbose etag https://registry.npmjs.org/ng-sortable from cache
+58 verbose get saving ng-sortable to /Users/top/.npm/registry.npmjs.org/ng-sortable/.cache.json
+59 verbose correctMkdir /Users/top/.npm correctMkdir not in flight; initializing
+60 silly addNameTag next cb for ng-sortable with tag latest
+61 silly addNamed ng-sortable@1.3.6
+62 verbose addNamed "1.3.6" is a plain semver version for ng-sortable
+63 silly cache afterAdd ng-sortable@1.3.6
+64 verbose afterAdd /Users/top/.npm/ng-sortable/1.3.6/package/package.json not in flight; writing
+65 verbose correctMkdir /Users/top/.npm correctMkdir not in flight; initializing
+66 verbose afterAdd /Users/top/.npm/ng-sortable/1.3.6/package/package.json written
+67 silly install resolved [ { name: 'ng-sortable',
+67 silly install resolved     version: '1.3.6',
+67 silly install resolved     homepage: 'https://github.com/a5hik/ng-sortable',
+67 silly install resolved     author: { name: 'Muhammed Ashik', email: 'https://github.com/a5hik' },
+67 silly install resolved     description: 'Angular Library for Drag and Drop, supports Sortable and Draggable.',
+67 silly install resolved     main: 'index.js',
+67 silly install resolved     keywords:
+67 silly install resolved      [ 'angular',
+67 silly install resolved        'drag',
+67 silly install resolved        'drop',
+67 silly install resolved        'sortable',
+67 silly install resolved        'draggable',
+67 silly install resolved        'touch',
+67 silly install resolved        'directive' ],
+67 silly install resolved     dependencies: {},
+67 silly install resolved     devDependencies:
+67 silly install resolved      { grunt: '~0.4.4',
+67 silly install resolved        'grunt-autoprefixer': '~0.4.0',
+67 silly install resolved        'grunt-bower-install': '~0.7.0',
+67 silly install resolved        'grunt-concurrent': '~0.4.1',
+67 silly install resolved        'grunt-contrib-clean': '~0.5.0',
+67 silly install resolved        'grunt-contrib-coffee': '~0.7.0',
+67 silly install resolved        'grunt-contrib-compass': '~0.6.0',
+67 silly install resolved        'grunt-contrib-concat': '~0.3.0',
+67 silly install resolved        'grunt-contrib-connect': '~0.5.0',
+67 silly install resolved        'grunt-contrib-copy': '~0.4.1',
+67 silly install resolved        'grunt-contrib-cssmin': '~0.7.0',
+67 silly install resolved        'grunt-contrib-htmlmin': '~0.1.3',
+67 silly install resolved        'grunt-contrib-imagemin': '~0.8.0',
+67 silly install resolved        'grunt-contrib-jshint': '~0.7.1',
+67 silly install resolved        'grunt-contrib-uglify': '~0.2.0',
+67 silly install resolved        'grunt-contrib-watch': '~0.5.2',
+67 silly install resolved        'grunt-google-cdn': '~0.2.0',
+67 silly install resolved        'grunt-open': '~0.2.3',
+67 silly install resolved        'grunt-newer': '~0.5.4',
+67 silly install resolved        'grunt-ngmin': '~0.0.2',
+67 silly install resolved        'grunt-rev': '~0.1.0',
+67 silly install resolved        'grunt-svgmin': '~0.2.0',
+67 silly install resolved        'grunt-usemin': '~2.0.0',
+67 silly install resolved        'jshint-stylish': '~0.1.3',
+67 silly install resolved        'load-grunt-tasks': '~0.2.0',
+67 silly install resolved        'time-grunt': '~0.2.1',
+67 silly install resolved        'karma-ng-scenario': '~0.1.0',
+67 silly install resolved        karma: '~0.12.1',
+67 silly install resolved        'karma-jasmine': '~0.2.2',
+67 silly install resolved        'karma-chrome-launcher': '~0.1.4',
+67 silly install resolved        'karma-ng-html2js-preprocessor': '~0.1.0',
+67 silly install resolved        'grunt-karma': '~0.8.2' },
+67 silly install resolved     engines: { node: '>=0.8.0' },
+67 silly install resolved     scripts: { test: 'grunt test' },
+67 silly install resolved     directories: { test: 'test' },
+67 silly install resolved     repository:
+67 silly install resolved      { type: 'git',
+67 silly install resolved        url: 'git+https://github.com/a5hik/ng-sortable.git' },
+67 silly install resolved     license: 'MIT',
+67 silly install resolved     bugs: { url: 'https://github.com/a5hik/ng-sortable/issues' },
+67 silly install resolved     gitHead: '7d0e9da06f1fa83369cdf403de0544df917a2c36',
+67 silly install resolved     _id: 'ng-sortable@1.3.6',
+67 silly install resolved     _shasum: 'f888aded361081d23abcee5c2ca9863fa1401e42',
+67 silly install resolved     _from: 'ng-sortable@latest',
+67 silly install resolved     _npmVersion: '2.11.3',
+67 silly install resolved     _nodeVersion: '0.12.7',
+67 silly install resolved     _npmUser: { name: 'a5hik', email: 'ashikes@gmail.com' },
+67 silly install resolved     dist:
+67 silly install resolved      { shasum: 'f888aded361081d23abcee5c2ca9863fa1401e42',
+67 silly install resolved        tarball: 'https://registry.npmjs.org/ng-sortable/-/ng-sortable-1.3.6.tgz' },
+67 silly install resolved     maintainers: [ [Object] ],
+67 silly install resolved     _npmOperationalInternal:
+67 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+67 silly install resolved        tmp: 'tmp/ng-sortable-1.3.6.tgz_1461148731100_0.33909721695818007' },
+67 silly install resolved     _resolved: 'https://registry.npmjs.org/ng-sortable/-/ng-sortable-1.3.6.tgz',
+67 silly install resolved     readme: 'ERROR: No README data found!' } ]
+68 info install ng-sortable@1.3.6 into /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard
+69 info installOne ng-sortable@1.3.6
+70 verbose installOne of ng-sortable to /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard not in flight; installing
+71 verbose correctMkdir /Users/top/.npm/_locks correctMkdir not in flight; initializing
+72 verbose lock using /Users/top/.npm/_locks/ng-sortable-10a8cbc2f9098e4f.lock for /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/ng-sortable
+73 silly install write writing ng-sortable 1.3.6 to /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/ng-sortable
+74 verbose unbuild node_modules/ng-sortable
+75 info preuninstall ng-sortable@1.3.6
+76 info uninstall ng-sortable@1.3.6
+77 verbose unbuild rmStuff ng-sortable@1.3.6 from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules
+78 info postuninstall ng-sortable@1.3.6
+79 silly gentlyRm /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/ng-sortable is being purged from base /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard
+80 verbose gentlyRm don't care about contents; nuking /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/ng-sortable
+81 silly vacuum-fs purging /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/ng-sortable
+82 silly vacuum-fs quitting because other entries in /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules
+83 verbose tar unpack /Users/top/.npm/ng-sortable/1.3.6/package.tgz
+84 verbose tar unpacking to /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/ng-sortable
+85 silly gentlyRm /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/ng-sortable is being purged
+86 verbose gentlyRm don't care about contents; nuking /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/ng-sortable
+87 silly gunzTarPerm modes [ '755', '644' ]
+88 silly gunzTarPerm extractEntry package.json
+89 silly gunzTarPerm extractEntry README.md
+90 silly gunzTarPerm extractEntry LICENSE
+91 silly gunzTarPerm extractEntry Gruntfile.js
+92 silly gunzTarPerm extractEntry index.js
+93 silly gunzTarPerm extractEntry karma.conf.js
+94 silly gunzTarPerm extractEntry bower.json
+95 silly gunzTarPerm extractEntry demo/app.js
+96 silly gunzTarPerm extractEntry demo/containerPositioning.js
+97 silly gunzTarPerm extractEntry demo/model.js
+98 silly gunzTarPerm extractEntry demo/containerPositioning.html
+99 silly gunzTarPerm extractEntry demo/index.html
+100 silly gunzTarPerm extractEntry demo/scripts/controllers/BlockController.js
+101 silly gunzTarPerm extractEntry demo/scripts/controllers/CloneController.js
+102 silly gunzTarPerm extractEntry demo/scripts/controllers/CtrlCloneController.js
+103 silly gunzTarPerm extractEntry demo/scripts/controllers/GridController.js
+104 silly gunzTarPerm extractEntry demo/scripts/controllers/HorizontalController.js
+105 silly gunzTarPerm extractEntry demo/scripts/controllers/KanbanController.js
+106 silly gunzTarPerm extractEntry demo/scripts/controllers/NewCardController.js
+107 silly gunzTarPerm extractEntry demo/scripts/controllers/ScrollableController.js
+108 silly gunzTarPerm extractEntry demo/scripts/controllers/SprintController.js
+109 silly gunzTarPerm extractEntry demo/scripts/controllers/TableController.js
+110 silly gunzTarPerm extractEntry demo/scripts/services/BoardDataFactory.js
+111 silly gunzTarPerm extractEntry demo/scripts/services/BoardManipulator.js
+112 silly gunzTarPerm extractEntry demo/scripts/services/BoardService.js
+113 silly gunzTarPerm extractEntry demo/styles/app.css
+114 silly gunzTarPerm extractEntry demo/styles/board.css
+115 silly gunzTarPerm extractEntry demo/styles/containerPositioning.css
+116 silly gunzTarPerm extractEntry demo/styles/plunker.css
+117 silly gunzTarPerm extractEntry demo/styles/scrollableContainer.css
+118 silly gunzTarPerm extractEntry demo/views/block.html
+119 silly gunzTarPerm extractEntry demo/views/clone.html
+120 silly gunzTarPerm extractEntry demo/views/ctrlClone.html
+121 silly gunzTarPerm extractEntry demo/views/grid.html
+122 silly gunzTarPerm extractEntry demo/views/horizontal.html
+123 silly gunzTarPerm extractEntry demo/views/kanban.html
+124 silly gunzTarPerm extractEntry demo/views/partials/card.html
+125 silly gunzTarPerm extractEntry demo/views/partials/newCard.html
+126 silly gunzTarPerm extractEntry demo/views/scrollable.html
+127 silly gunzTarPerm extractEntry demo/views/sprint.html
+128 silly gunzTarPerm extractEntry demo/views/table.html
+129 silly gunzTarPerm extractEntry dist/ng-sortable.js
+130 silly gunzTarPerm extractEntry dist/ng-sortable.min.js
+131 silly gunzTarPerm extractEntry dist/ng-sortable.css
+132 silly gunzTarPerm extractEntry dist/ng-sortable.min.css
+133 silly gunzTarPerm extractEntry dist/ng-sortable.style.css
+134 silly gunzTarPerm extractEntry dist/ng-sortable.style.min.css
+135 silly gunzTarPerm extractEntry source/sortable-helper.js
+136 silly gunzTarPerm extractEntry source/sortable-item-handle.js
+137 silly gunzTarPerm extractEntry source/sortable-item.js
+138 silly gunzTarPerm extractEntry source/sortable-main.js
+139 silly gunzTarPerm extractEntry source/sortable.js
+140 silly gunzTarPerm extractEntry source/ng-sortable.css
+141 silly gunzTarPerm extractEntry source/ng-sortable.style.css
+142 silly gunzTarPerm extractEntry test/sortable.spec.js
+143 silly gunzTarPerm extractEntry test/runner.html
+144 verbose write writing to /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/ng-sortable/package.json
+145 info preinstall ng-sortable@1.3.6
+146 verbose readDependencies loading dependencies from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/ng-sortable/package.json
+147 verbose readDependencies loading dependencies from /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/ng-sortable/package.json
+148 silly install resolved []
+149 verbose about to build /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/ng-sortable
+150 info build /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/ng-sortable
+151 info linkStuff ng-sortable@1.3.6
+152 silly linkStuff ng-sortable@1.3.6 has /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules as its parent node_modules
+153 verbose linkBins ng-sortable@1.3.6
+154 verbose linkMans ng-sortable@1.3.6
+155 verbose rebuildBundles ng-sortable@1.3.6
+156 info install ng-sortable@1.3.6
+157 info postinstall ng-sortable@1.3.6
+158 verbose unlock done using /Users/top/.npm/_locks/ng-sortable-10a8cbc2f9098e4f.lock for /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/node_modules/ng-sortable
+159 verbose validateInstall loading /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard/package.json for validation
+160 verbose stack Error: The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
+160 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+160 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+160 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+160 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+160 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+160 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+160 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+160 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+160 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+160 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+161 verbose cwd /Applications/AMPPS/www/themeforest-12840713-material-lite-mdl-with-angularjs-admin-dashboard
+162 error Darwin 16.0.0
+163 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "ng-sortable" "--save"
+164 error node v4.5.0
+165 error npm  v2.15.9
+166 error code EPEERINVALID
+167 error peerinvalid The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
+167 error peerinvalid Peer grunt-grep@0.7.0 wants grunt@~0.4.1
+167 error peerinvalid Peer grunt-bump@0.8.0 wants grunt@>=1.0.1
+167 error peerinvalid Peer grunt-ng-constant@2.0.1 wants grunt@>=0.4.0
+167 error peerinvalid Peer grunt-contrib-concat@1.0.1 wants grunt@>=0.4.0
+167 error peerinvalid Peer grunt-filerev@2.3.1 wants grunt@>=0.4.0
+167 error peerinvalid Peer grunt-usemin@3.1.1 wants grunt@>=0.4.0
+167 error peerinvalid Peer grunt-postcss@0.8.0 wants grunt@>=0.4.5
+167 error peerinvalid Peer grunt-serve@0.1.6 wants grunt@~0.4.0
+167 error peerinvalid Peer load-grunt-tasks@3.5.0 wants grunt@>=0.4.0
+167 error peerinvalid Peer grunt-contrib-clean@1.0.0 wants grunt@>= 0.4.5
+167 error peerinvalid Peer grunt-contrib-jshint@1.0.0 wants grunt@>=0.4.0
+167 error peerinvalid Peer load-grunt-configs@1.0.0 wants grunt@>=0.4.0
+167 error peerinvalid Peer grunt-sass@1.2.1 wants grunt@>=0.4.0
+168 verbose exit [ 1, true ]
