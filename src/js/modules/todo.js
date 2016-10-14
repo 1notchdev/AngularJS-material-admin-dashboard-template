@@ -14,15 +14,46 @@
       this.activeTodo = {};
       this.activeFilter = 0;
       this.$scope.timerRunning = false;
+      this.$scope.timerRequest = {
+        "Id":null,
+        "UserId":null,
+        "TaskId":null,
+        "Started":null,
+        "Ended":null
+      }
       this.$scope.startTimer = function (){
+        self.$scope.timerRequest = {
+          "Id":null,
+          "UserId":self.$scope.todoWebService.userData.userId,
+          "TaskId":self.activeTodo.Id,
+          "Started":new Date().toJSON(),
+          "Ended":null
+        }
+        self.$scope.todoWebService.startInterval(self.$scope.timerRequest).then(function(res){
+          console.log(res);
+          self.$scope.timerRequest = res.data;
           self.$scope.$broadcast('timer-start');
           self.$scope.timerRunning = true;
+        });
       };
 
       this.$scope.stopTimer = function (){
+        self.$scope.timerRequest.Ended = new Date().toJSON();
+        self.$scope.todoWebService.stopInterval(self.$scope.timerRequest).then(function(res){
+          console.log(res);
+          self.$scope.timerRequest = {
+            "Id":null,
+            "UserId":null,
+            "TaskId":null,
+            "Started":null,
+            "Ended":null
+          }
           self.$scope.$broadcast('timer-stop');
           self.$scope.timerRunning = false;
+        });
+          
       };
+      
 
       // this.filters = [
       //   {
@@ -47,173 +78,20 @@
       }
 
       this.newTodo = {
-          // "Id": 3,
-          "ForUserId": 1000,
-          "AddedByUserId": 1000,
           "JobId": null,
           "Description": "",
-          "PublicNote": " ",
-          "PrivateNote": " ",
+          "PublicNote": "",
+          "PrivateNote": "",
           "Created": "",
-          "ForDate": null,
           "PosNo": 1,
           "UnitMins": 25,
           "RestMins": 5,
           "UnitsEst": null,
           "UnitsAct": null,
-          "HourlyRate": null,
-          "DayMoveCount": null,
           "SplitOfTaskId": null,
-          "Updated": null,
           "DayAllocation": 0,
-          "Done": false,
-          "Intervals": [],
-          "TotalTime": null
+          "Done": null,
       };
-
-      if ( !localStorageService.get('todos') ) {
-        var todos = [
-                      {
-                        "Id": 3,
-                        "ForUserId": 1000,
-                        "AddedByUserId": 1000,
-                        "JobId": null,
-                        "Description": "Task Test3",
-                        "PublicNote": " ",
-                        "PrivateNote": " ",
-                        "Created": "2016-10-01T02:30:00+10:00",
-                        "ForDate": null,
-                        "PosNo": 1,
-                        "UnitMins": 25,
-                        "RestMins": 5,
-                        "UnitsEst": null,
-                        "UnitsAct": null,
-                        "HourlyRate": null,
-                        "DayMoveCount": null,
-                        "SplitOfTaskId": null,
-                        "Updated": "2016-10-01T02:30:00+10:00",
-                        "DayAllocation": 0,
-                        "Done": false,
-                        "Intervals": [],
-                        "TotalTime": null
-                      },
-                      {
-                        "Id": 4,
-                        "ForUserId": 1000,
-                        "AddedByUserId": 1000,
-                        "JobId": null,
-                        "Description": "Task Test 4",
-                        "PublicNote": " ",
-                        "PrivateNote": " ",
-                        "Created": "2016-10-01T02:30:00+10:00",
-                        "ForDate": null,
-                        "PosNo": 1,
-                        "UnitMins": 25,
-                        "RestMins": 5,
-                        "UnitsEst": null,
-                        "UnitsAct": null,
-                        "HourlyRate": null,
-                        "DayMoveCount": null,
-                        "SplitOfTaskId": null,
-                        "Updated": "2016-10-01T02:30:00+10:00",
-                        "DayAllocation": 0,
-                        "Done": false,
-                        "Intervals": [
-                          {
-                            "Id": 1,
-                            "UserId": 1000,
-                            "TaskId": 4,
-                            "Started": "2016-10-05T10:30:00+10:00",
-                            "Ended": null
-                          },
-                          {
-                            "Id": 2,
-                            "UserId": 1000,
-                            "TaskId": 4,
-                            "Started": "2016-10-05T10:30:00+10:00",
-                            "Ended": "2016-10-05T10:35:00+10:00"
-                          }
-                        ],
-                        "TotalTime": "00:00:00"
-                      },
-                      {
-                        "Id": 5,
-                        "ForUserId": 1000,
-                        "AddedByUserId": 1000,
-                        "JobId": null,
-                        "Description": "Task Test5",
-                        "PublicNote": " ",
-                        "PrivateNote": " ",
-                        "Created": "2016-10-01T02:30:00+10:00",
-                        "ForDate": null,
-                        "PosNo": 1,
-                        "UnitMins": 25,
-                        "RestMins": 5,
-                        "UnitsEst": null,
-                        "UnitsAct": null,
-                        "HourlyRate": null,
-                        "DayMoveCount": null,
-                        "SplitOfTaskId": null,
-                        "Updated": "2016-10-01T02:30:00+10:00",
-                        "DayAllocation": 1,
-                        "Done": false,
-                        "Intervals": [],
-                        "TotalTime": null
-                      },
-                      {
-                        "Id": 6,
-                        "ForUserId": 1000,
-                        "AddedByUserId": 1000,
-                        "JobId": null,
-                        "Description": "Task Test6",
-                        "PublicNote": " ",
-                        "PrivateNote": " ",
-                        "Created": "2016-10-01T02:30:00+10:00",
-                        "ForDate": null,
-                        "PosNo": 1,
-                        "UnitMins": 25,
-                        "RestMins": 5,
-                        "UnitsEst": null,
-                        "UnitsAct": null,
-                        "HourlyRate": null,
-                        "DayMoveCount": null,
-                        "SplitOfTaskId": null,
-                        "Updated": "2016-10-01T02:30:00+10:00",
-                        "DayAllocation": 1,
-                        "Done": false,
-                        "Intervals": [],
-                        "TotalTime": null
-                      },
-                      {
-                        "Id": 7,
-                        "ForUserId": 1000,
-                        "AddedByUserId": 1000,
-                        "JobId": null,
-                        "Description": "Task Test7",
-                        "PublicNote": " ",
-                        "PrivateNote": " ",
-                        "Created": "2016-10-01T02:30:00+10:00",
-                        "ForDate": null,
-                        "PosNo": 1,
-                        "UnitMins": 25,
-                        "RestMins": 5,
-                        "UnitsEst": null,
-                        "UnitsAct": null,
-                        "HourlyRate": null,
-                        "DayMoveCount": null,
-                        "SplitOfTaskId": null,
-                        "Updated": "2016-10-01T02:30:00+10:00",
-                        "DayAllocation": 2,
-                        "Done": false,
-                        "Intervals": [],
-                        "TotalTime": null
-                      }
-                    ];
-
-        localStorageService.set('todos', todos);
-      }
-      localStorageService.bind(this.$scope, 'todos');
-      
       
       this.$scope.sprintSortOptions = {
 
@@ -250,13 +128,13 @@
 
       this.completedTodos = function(dayAllocation) {
         if (dayAllocation === 0){
-          return $filter('filter')(this.$scope.todayTodos, { Done: !true });
+          return $filter('filter')(this.$scope.todayTodos, { Done: null });
         }
         else if (dayAllocation == 1){
-          return $filter('filter')(this.$scope.nextdayTodos, { Done: !true });
+          return $filter('filter')(this.$scope.nextdayTodos, { Done: null });
         }
         else if (dayAllocation == 2){
-          return $filter('filter')(this.$scope.laterTodos, { Done: !true });
+          return $filter('filter')(this.$scope.laterTodos, { Done: null });
         }
         
       };
@@ -278,21 +156,32 @@
       this.setActiveTodo = function(){
         if (this.activeTodo.Id != this.$scope.todayTodos[0].Id){
           this.activeTodo = this.$scope.todayTodos[0];
-          this.$scope.stopTimer();
-          // this.$scope.startTimer();
+          if (this.$scope.timerRunning){
+            this.$scope.stopTimer();
+          }
         }
         // return this.$scope.activeTodo;
       }
-      this.getTodosbyDayAllocation();
-      this.restore();
+
+      this.$scope.todoWebService.getTask().then(function(res){
+        console.log(res);
+        self.$scope.todos = res.data;
+        self.getTodosbyDayAllocation();
+        self.restore();
+      })
+      
 
       this.addTodo = function() {
         if (this.todo.Description !== '' && this.todo.Description !== undefined) {
           console.log(this.todo);
-          this.$scope.todos.push(this.todo);
-          // $rootScope.$broadcast('todos:count', this.count());
-          this.getTodosbyDayAllocation();
-          this.restore();
+          this.todo.Created = new Date().toJSON();
+          // this.$scope.todos.push(this.todo);
+          this.$scope.todoWebService.postTask(JSON.stringify(this.todo)).then(function(res){
+            self.$scope.todos.push(res.data);
+            self.getTodosbyDayAllocation();
+            self.restore();  
+          });
+          
         }
       };
 
@@ -357,7 +246,13 @@
     }
 
     Todo.prototype.toggleDone = function(todo) {
-      todo.Done = !todo.Done;
+      // todo.Done = !todo.Done;
+      if (todo.Done === null){
+        todo.Done = new Date().toJSON();
+      }
+      else {
+        todo.Done = null
+      }
       this.getOpenedTodoCounts();
       
     };
@@ -400,10 +295,10 @@
     Todo.prototype.filter = function(filter) {
       if ( filter === 'active' ) {
         this.activeFilter = 1;
-        this.todoFilter = { Done: false };
+        this.todoFilter = { Done: null };
       } else if ( filter === 'completed' ) {
         this.activeFilter = 2;
-        this.todoFilter = { Done: true };
+        this.todoFilter = { Done: !null };
       } else {
         this.activeFilter = 0;
         this.todoFilter = {};

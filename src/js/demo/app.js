@@ -26,7 +26,7 @@
     'gridshore.c3js.chart', // C3 chart directives
 
     'angularGrid',
-    'LocalStorageModule', // Required by todo module
+    'LocalStorageModule', // Required by todo module'
     'as.sortable',
     'timer'
 
